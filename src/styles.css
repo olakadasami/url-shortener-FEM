@@ -197,3 +197,52 @@ body {
     font-size: 16px;
     color: var(--color-primary-lightk);
 }
+
+.boost {
+    background: var(--color-dark-2);
+    background-image: url('../images/bg-boost-mobile.svg');
+    background-position: left;
+    color: var(--color-white);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.boost__heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--color-dark-2);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.footer__item {
+    margin-bottom: 1rem;
+}
+
+.footer__item:nth-child(1) {
+    margin-bottom: 1.5rem;
+}
+
+.footer__link {
+    color: var(--color-light-2);
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: center;
+}
