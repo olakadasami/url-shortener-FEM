@@ -1,9 +1,38 @@
+/* custom values/variables */
+:root {
+    --color-primary-light: hsl(180, 66%, 49%);
+    --color-primary-dark: hsl(257, 27%, 26%);
+    --color-red: hsl(0, 87%, 67%);
+    --color-white: #fff;
+    --color-light-1: hsl(0, 0%, 90%);
+    --color-light-2: hsl(257, 7%, 63%);
+    --color-dark-1: hsl(255, 11%, 22%);
+    --color-dark-2: hsl(260, 8%, 14%);
+}
+
+/* Resets */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+body {
+    overflow-x: hidden;
+    font-size: 18px;
+    color: var(--color-dark-2);
+}
+
+
+/* Attribution styles */
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -11,4 +40,105 @@
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Global/shared styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.2rem;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+}
+
+.btn-pink {
+    color: var(--color-white);
+    background-color: var(--color-primary-light);
+    border-radius: 50px;
+}
+
+/* Mobile styles */
+.padding-x {
+    padding-inline: 1.5rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+    padding-inline: 1rem;
+}
+
+.nav__container {
+    display: none;
+}
+
+.header {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    padding-bottom: 4rem;
+}
+
+.header__image {
+    width: 100%;
+}
+
+.header__image img {
+    width: 150%;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header__heading {
+    font-size: 2.8rem;
+
+}
+
+.header__paragraph {
+    color: var(--color-primary-light);
+}
+
+.shorten {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    /* z-index: 10;
+    margin-bottom: -30%; */
+}
+
+.shorten form {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-dark-1);
+    background-image: url('../images/bg-shorten-mobile.svg');
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+.shorten__text {
+    width: 100%;
+    padding: 1rem;
+    border-radius: .6rem;
+    outline: 0;
+}
+
+.shorten__btn {
+    color: var(--color-white);
+    background-color: var(--color-primary-light);
+    border-radius: .6rem;
+    cursor: pointer;
+}
+
+.stats {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    background-color: var(--color-light-1);
 }
