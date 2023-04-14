@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="/src/styles.css">
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-  <script src="/src/index.js"></script>
+  <script defer src="/src/index.js"></script>
 
 
 </head>
@@ -75,9 +75,30 @@
 
   <section id="shorten" class="padding-x shorten">
     <form id="form">
-      <input type="text" class="shorten__text" placeholder="Shorten a link here...">
-      <input type="button" class="shorten__btn btn" value="Shorten It!">
+      <div class="form__inputs">
+        <input type="text" class="shorten__text" name="text" placeholder="Shorten a link here...">
+        <input type="submit" class="shorten__btn btn" value="Shorten It!">
+        <p class="error"></p>
+      </div>
     </form>
+
+    <ul id="list" class="shorten__links">
+      <!-- <li class="shorten__link">
+        <div class="links">
+          <p id="original__link" class="original__link">
+            http://www.facebook.com/mountaindew
+          </p>
+          <p class="copy__text">
+            short
+          </p>
+        </div>
+
+        <button class="copy__btn btn">
+          Copy
+        </button>
+
+      </li> -->
+    </ul>
   </section>
 
   <section class="stats padding-x">
