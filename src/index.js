@@ -3,6 +3,9 @@ const input = document.querySelector('.shorten__text')
 const shortenBtn = document.querySelector('.shorten__btn')
 const error = document.querySelector('.error')
 const listContainer = document.querySelector('#list')
+const closeMenu = document.querySelector('.close-menu')
+const openMenu = document.querySelector('.nav__menu')
+const navBar = document.querySelector('.nav__container--mobile')
 
 // Variables
 let list;
@@ -100,3 +103,16 @@ form.addEventListener('submit', async (e) => {
 
   copyTextFromClipboard()
 })
+
+function menuOpen() {
+  navBar.classList.remove('hide')
+  navBar.classList.add('show')
+}
+function menuClose() {
+  navBar.classList.add('hide')
+  navBar.classList.remove('show')
+}
+
+// Listeners to Open and Close Nav
+openMenu.addEventListener('click', menuOpen)
+closeMenu.addEventListener('click', menuClose)

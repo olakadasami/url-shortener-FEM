@@ -70,6 +70,11 @@ h4 {
     font-weight: bold;
     font-size: 18px;
     border: none;
+    transition: all .2s;
+}
+
+.btn:hover {
+    background-color: var(--color-light-1);
 }
 
 .btn-pink {
@@ -93,10 +98,53 @@ h4 {
     justify-content: space-between;
     height: 7rem;
     padding-inline: 1.5rem;
+    position: relative;
+    color: var(--color-primary-light);
+}
+
+.nav__item,
+.nav__item--mobile {
+    transition: all .2s;
+}
+
+.nav__item:hover,
+.nav__item--mobile:hover {
+    color: var(--color-primary-dark);
 }
 
 .nav__container {
     display: none;
+}
+
+.nav__container--mobile {
+    height: 100vh;
+    background-color: var(--color-white);
+    position: fixed;
+    top: 0;
+    transition: all .6s;
+    padding: 4rem 3rem;
+    z-index: 10;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.nav__container--mobile.show {
+    right: 0;
+}
+
+.nav__container--mobile.hide {
+    right: -100%;
+}
+
+.close-menu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.nav__items--mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .header {
@@ -124,7 +172,7 @@ h4 {
 }
 
 .header__heading {
-    font-size: 2.8rem;
+    font-size: 1.8rem;
 
 }
 
@@ -372,6 +420,10 @@ footer {
         align-items: center;
         width: 100%;
         justify-content: space-between;
+    }
+
+    .nav__container--mobile {
+        display: none;
     }
 
     .nav__items {
