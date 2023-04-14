@@ -173,7 +173,7 @@ h4 {
 
 .header__heading {
     font-size: 1.8rem;
-
+    font-weight: bold;
 }
 
 .header__paragraph {
@@ -432,6 +432,10 @@ footer {
         align-items: center;
     }
 
+    .header__heading {
+        font-size: 2.8rem;
+    }
+
     .stats__cards {
         text-align: start;
     }
@@ -483,6 +487,10 @@ footer {
 
     .nav__items {
         gap: 2rem;
+    }
+
+    .header__heading {
+        font-size: 4rem;
     }
 
     .shorten__link {
