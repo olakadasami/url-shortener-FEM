@@ -36,7 +36,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [My solution](https://github.com/olakadasami/url-shortener-FEM.git)
-- Live Site URL: [My live site](https://olakadasami.github.io/url-shortener-FEM/)
+- Live Site URL: [My live site](https://fem-url-shortener-olakadasami.netlify.app/)
 
 ## My process
 
